@@ -4,6 +4,8 @@ Simple dockerized web app for safely transforming data w/o logging to a web serv
 
 ## Steps
 
+```Make sure Docker is installed and running!```
+
 ```$ git clone https://github.com/Siixes/Transformer.git```
 
 ```$ cd Transformer```
