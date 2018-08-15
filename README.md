@@ -4,12 +4,12 @@ Simple dockerized web app for safely transforming data w/o logging to a web serv
 
 ## Steps
 
-```git clone ...```
+```$ git clone https://github.com/Siixes/Transformer.git```
 
-```cd Transformer```
+```$ cd Transformer```
 
-```docker build -t siixes/transformer .```
+```$ docker build -t siixes/transformer .```
 
-```docker run -p 8888:5000 siixes/transformer```
+```$ docker run -p 8888:5000 siixes/transformer```
 
 ```Browse to http://localhost:8888```
