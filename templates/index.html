@@ -1,0 +1,38 @@
+<!doctype html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+function ParseJson() {
+	// make ajax call and get parsed results
+	var input = document.getElementById("forminput").value;
+	$.ajax({
+		type:"POST",
+		url: "/parsejson",
+		data: {inputdata: input},
+		dataType: "text",
+		success:function(responsedata) {
+			$('#forminput').val(responsedata);
+			//alert(responsedata);
+		},
+		error:function(responseerror) {
+			$('forminput').val(responseerror);
+		}
+	})
+}
+
+</script>
+</head>
+
+<title>Jsonify</title>
+<div class=page>
+
+<h1>Pretty Json</h1>
+
+<input type="button" onclick='ParseJson()' value="Jsonify">
+
+<textarea name='FormInput' id="forminput" placeholder="Enter json here" rows="20" cols="200"></textarea>
+
+</div>
+</html>
